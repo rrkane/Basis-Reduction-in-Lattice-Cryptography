@@ -1,0 +1,76 @@
+\ProvidesPackage{partiiiessay}[2015/02/28 v1.0 Essay style]
+\RequirePackage{amsfonts, amsmath, amssymb, amsthm, hyperref, mathpazo, enumerate, stmaryrd}
+\RequirePackage[all]{xy}
+\RequirePackage[capitalise]{cleveref}
+\RequirePackage[titles]{tocloft}
+\RequirePackage[nottoc,numbib]{tocbibind}
+\RequirePackage[protrusion=true,expansion=true]{microtype}
+\usepackage{fancyvrb}
+\usepackage{varwidth}
+\usepackage{tgheros}
+\usepackage{tikz}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage[font={small}]{caption}
+\usepackage{subcaption}
+\linespread{1.05}
+\setlength{\cftbeforesecskip}{1.5ex}
+\allowdisplaybreaks
+
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}[subsection]
+\newtheorem{conjecture}[thm]{Conjecture}
+\newtheorem{prop}[thm]{Proposition}
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{ex}[thm]{Example}
+\newtheorem{rmk}[thm]{Remark}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{app}[thm]{Appendix}
+
+\crefname{thm}{theorem}{theorems}
+\Crefname{thm}{Theorem}{Theorems}
+
+% Macros
+% Functors
+\DeclareMathOperator{\Gal}{Gal}
+\DeclareMathOperator{\Aut}{Aut}
+\DeclareMathOperator{\End}{End}
+\DeclareMathOperator{\GL}{GL}
+\DeclareMathOperator{\SL}{SL}
+\DeclareMathOperator{\im}{im}
+
+\DeclareMathOperator{\disc}{disc}
+
+% Rings
+\newcommand{\CC}{\mathbf{C}}
+\newcommand{\FF}{\mathbf{F}}
+\newcommand{\Fb}{\overline{\mathbf{F}}}
+\newcommand{\QQ}{\mathbf{Q}}
+\newcommand{\Qb}{\overline{\mathbf{Q}}}
+\newcommand{\Qp}{\mathbf{Q}_p}
+\newcommand{\Ql}{\mathbf{Q}_\ell}
+\newcommand{\Qpb}{\overline{\mathbf{Q}}_p}
+\newcommand{\Qlb}{\overline{\mathbf{Q}}_\ell}
+\newcommand{\ZZ}{\mathbf{Z}}
+\newcommand{\Zb}{\overline{\mathbf{Z}}}
+\newcommand{\cO}{\mathcal{O}}
+
+% Groups
+\newcommand{\GQ}{\Gal(\Qb/\QQ)}
+\newcommand{\Gp}{\mathrm{G}_p}
+\newcommand{\Gl}{\mathrm{G}_\ell}
+
+\newcommand{\ddq}{\frac{\mathrm{d}}{\mathrm{d}q}}
+\newcommand{\Id}{\mathrm{Id}}
+\newcommand{\nr}{\mathrm{nr}}
+\newcommand{\tamr}{\mathrm{tr}}
+\newcommand{\rss}{\rho^\text{ss}}
+\DeclareMathOperator{\Frob}{Frob}
+\DeclareMathOperator{\tr}{tr}
+
+\newcommand{\LA}{\mathcal{L}}
+\newcommand{\B}{\mathcal{B}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\ba}{\mathbf{b}}
+\newcommand{\Z}{\mathbb{Z}}
