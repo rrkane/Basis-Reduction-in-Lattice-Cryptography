@@ -1,6 +1,8 @@
-partiiiessay
+Basis Reduction in Lattice Cryptography
 ============
 
-My part III essay on Serre's conjecture.
+My honors thesis at Colby College. I explored the mathematical underpinnings of reduction algorithms which break lattice cryptosystems. I was advised by Professor Nora Youngs.
 
-This repository holds tex source and the latexed pdf.
+This repository holds the tex source and the compiled pdf.
+
+I used the excellent tex template provided by [alexjbest](https://github.com/alexjbest/partiiiessay).
